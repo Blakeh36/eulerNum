@@ -5,7 +5,7 @@ def factorial(x):   # this function carries out the factorial
         x = x * (i-1)
         i -= 1
     return x
-j = 1 #j is how many times the series will be run. In the future I'd like to instead ask the user how accurate they want it to be
+j = 1 #j is how many times the series will be run. In the future I would like to instead ask the user how accurate they want it to be
 e  = 1.0
 while j < 1000:
     e = e + 1.0/factorial(float(j))
