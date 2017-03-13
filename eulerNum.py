@@ -10,7 +10,7 @@ e  = 1.0
 
 limit = int(input("Please enter upper limit(eg. 1000)"))
 print("calculating. . .")
-while j < limit:
+while j < limit: # reminder that it's still calculating
     e = e + 1.0/factorial(j)
     if j % 2000 == 0:
         print("still calculating. . .")
@@ -19,6 +19,6 @@ print(e) #prints Euler's number
 eReal = 2.7182818284590452
 print("e actually equals %s" %eReal)
 percError = 100 * (eReal - e)/e
-if percError < 0:
+if percError < 0: # for some reason at higher upper limits the error will be less than one. to counter this I multiplied it by -1
     percError *= -1
 print("the percent error is %s" %percError)
