@@ -10,4 +10,4 @@ e  = 1.0
 while j < 1000:
     e = e + 1.0/factorial(float(j))
     j += 1
-print(e) #prints Eulers number
+print(e) #prints Euler's number
